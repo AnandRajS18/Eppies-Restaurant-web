@@ -4,14 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Ramson's | Premium Mexican Comfort Food</title>
+    <title>Eppies | Menu</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -76,15 +75,14 @@
     </style>
 </head>
 
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans">
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans mt-32">
     <header class="fixed top-0 z-[100] w-full bg-white/5 dark:bg-black/5 backdrop-blur-2xl border-b border-white/10">
         <div class="max-w-[1440px] mx-auto px-8 h-24 flex items-center justify-between">
             <div class="flex items-center gap-4">
                 <a href="index.html" class="flex items-center gap-4">
                     <span class="material-symbols-outlined text-4xl text-primary"
                         style="font-variation-settings: 'FILL' 1">restaurant_menu</span>
-                    <h1 class="text-3xl font-[900] tracking-[-0.05em] text-navy-accent dark:text-white uppercase">
-                        Ramon's
+                    <h1 class="text-3xl font-[900] tracking-[-0.05em] text-navy-accent dark:text-white uppercase">Eppies
                     </h1>
                 </a>
             </div>
@@ -114,39 +112,14 @@
             </div>
         </div>
     </header>
-    <section class="relative w-full h-screen overflow-hidden">
-        <div class="absolute inset-0 z-0 scale-110">
-            <video autoplay="" class="w-full h-full object-cover brightness-50 contrast-125" loop="" muted=""
-                playsinline="">
-                <source
-                    src="https://assets.mixkit.co/videos/preview/mixkit-slow-motion-of-a-burger-placed-on-a-table-41613-large.mp4"
-                    type="video/mp4" />
-            </video>
-        </div>
-        <div class="relative z-20 h-full flex flex-col items-center justify-center text-center px-4">
-            <div class="floating-text">
-                <span class="text-gold-accent font-black tracking-[0.6em] uppercase mb-8 block text-sm">Est. 1984 •
-                    Rosamond</span>
-                <h2
-                    class="text-8xl md:text-[12rem] font-[900] text-white leading-none tracking-tighter mix-blend-overlay opacity-80 uppercase">
-                    Ramson's</h2>
-                <h3 class="text-4xl md:text-6xl font-serif italic text-white -mt-12 md:-mt-20">Mexican restaurant</h3>
-            </div>
-            <div class="mt-20 flex flex-col sm:flex-row gap-8">
-                <a href="menu.html" class="btn-3d-gold pulse-anim text-lg flex items-center justify-center">Order
-                    Now</a>
-                <a href="menu.html"
-                    class="px-10 py-5 rounded-full border-2 border-white/30 text-white font-black uppercase tracking-widest hover:bg-white hover:text-navy-accent transition-all flex items-center justify-center">View
-                    Menu</a>
-            </div>
-        </div>
-        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 z-20">
-            <div class="flex flex-col items-center gap-4">
-                <div class="w-px h-24 bg-gradient-to-b from-transparent via-primary to-transparent"></div>
-            </div>
-        </div>
-    </section>
-    <section class="py-32 px-8 max-w-[1440px] mx-auto overflow-visible" id="menu">
+
+    <div class="pt-8 mb-20 text-center px-4">
+        <h1 class="text-4xl md:text-6xl font-serif italic text-primary dark:text-gold-accent mb-4">Our Menus</h1>
+        <p class="text-slate-500 dark:text-white/60 text-sm max-w-xl mx-auto uppercase tracking-widest font-bold">
+            Discover our signature flavors and seasonal selections</p>
+    </div>
+
+    <section class="py-16 px-8 max-w-[1440px] mx-auto overflow-visible" id="menu">
         <div class="flex flex-col mb-24 items-center text-center">
             <h3 class="text-primary font-black tracking-[0.4em] uppercase text-xs mb-6">Seasonal Selections</h3>
             <h2 class="text-6xl md:text-8xl font-[900] text-navy-accent dark:text-white tracking-tighter">Chef's
@@ -217,7 +190,7 @@
             <div
                 class="group relative w-full h-[500px] rounded-[2rem] overflow-hidden shadow-2xl transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/5 bg-background-dark">
                 <div class="absolute inset-0 h-[65%] w-full overflow-hidden">
-                    <img alt="All-Mexican Burger"
+                    <img alt="All-American Burger"
                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1599&auto=format&fit=crop" />
                     <!-- Dark Gradient Overlay connecting image to text area -->
@@ -225,7 +198,7 @@
                     </div>
                 </div>
                 <div class="absolute inset-x-0 bottom-0 h-[35%] p-6 flex flex-col justify-end bg-background-dark">
-                    <h4 class="text-[26px] font-serif font-bold text-white mb-2 leading-tight">All-Mexican Burger</h4>
+                    <h4 class="text-[26px] font-serif font-bold text-white mb-2 leading-tight">All-American Burger</h4>
                     <p class="text-[15px] text-gray-400 mb-6 truncate">Lettuce, pickles, signature sauce</p>
                     <div class="flex items-center justify-between mt-auto">
                         <p class="text-gold-accent font-black text-2xl bg-gold-accent/10 px-4 py-1 rounded-lg">$14</p>
@@ -383,119 +356,16 @@
             </div>
         </div>
     </section>
-    <section class="py-40 bg-navy-accent/5 dark:bg-white/5" id="reservations">
-        <div class="max-w-[1440px] mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-            <div class="space-y-12">
-                <h3 class="text-primary font-black tracking-[0.4em] uppercase text-xs">Reservations</h3>
-                <h2 class="text-7xl font-[900] dark:text-white text-navy-accent leading-none tracking-tighter">Your
-                    Table Awaits.</h2>
-                <p class="text-xl text-slate-500 dark:text-white/50 leading-relaxed font-serif italic">
-                    Experience the pinnacle of Mexican dining in Rosamond. Limited seating available daily.
-                </p>
-                <div class="flex items-center gap-12">
-                    <div>
-                        <span class="block text-4xl font-[900] text-gold-accent">98%</span>
-                        <span class="text-[10px] font-black uppercase tracking-widest opacity-50">Happy Guests</span>
-                    </div>
-                    <div class="w-px h-12 bg-white/10"></div>
-                    <div>
-                        <span class="block text-4xl font-[900] text-primary">02</span>
-                        <span class="text-[10px] font-black uppercase tracking-widest opacity-50">Michelin Stars</span>
-                    </div>
-                </div>
-            </div>
-            <div class="glass-card p-12 bg-white dark:bg-black/40 border-none shadow-2xl">
-                <form class="space-y-8">
-                    <div class="grid grid-cols-2 gap-8">
-                        <div class="space-y-2">
-                            <label class="text-[10px] font-black uppercase tracking-widest opacity-50">Date</label>
-                            <input
-                                class="w-full bg-slate-100 dark:bg-white/5 border-none rounded-xl p-4 focus:ring-2 focus:ring-gold-accent"
-                                type="date" />
-                        </div>
-                        <div class="space-y-2">
-                            <label class="text-[10px] font-black uppercase tracking-widest opacity-50">Time</label>
-                            <select
-                                class="w-full bg-slate-100 dark:bg-white/5 border-none rounded-xl p-4 focus:ring-2 focus:ring-gold-accent">
-                                <option>19:00</option>
-                                <option>20:30</option>
-                                <option>21:00</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="space-y-2">
-                        <label class="text-[10px] font-black uppercase tracking-widest opacity-50">Name</label>
-                        <input
-                            class="w-full bg-slate-100 dark:bg-white/5 border-none rounded-xl p-4 focus:ring-2 focus:ring-gold-accent"
-                            placeholder="Full Name" type="text" />
-                    </div>
-                    <button class="btn-3d-gold w-full text-center py-6">Secure Reservation</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    <section class="w-full bg-black py-40" id="location">
-        <div class="max-w-[1440px] mx-auto px-8">
-            <div class="mb-24 flex justify-between items-end">
-                <div>
-                    <h3 class="text-gold-accent font-black tracking-[0.4em] uppercase text-xs mb-6">Find Us</h3>
-                    <h2 class="text-7xl font-[900] text-white tracking-tighter">Visit Rosamond</h2>
-                </div>
-                <div class="hidden lg:block">
-                    <a class="btn-3d-gold !bg-primary !text-white !shadow-primary/20 flex items-center gap-3"
-                        href="https://www.google.com/maps/place/1431+W+Rosamond+Blvd,+Rosamond,+CA+93560,+USA/@34.865479,-118.1595248,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2387f88b2b8ff:0xc78784900a323935!8m2!3d34.865479!4d-118.1569499!16s%2Fg%2F11bw3xymdh?entry=ttu"
-                        target="_blank">
-                        Get Directions <span class="material-symbols-outlined">directions</span>
-                    </a>
-                </div>
-            </div>
-            <div
-                class="grid grid-cols-1 lg:grid-cols-12 rounded-[3rem] overflow-hidden bg-white/5 border border-white/10">
-                <div class="lg:col-span-5 p-16 flex flex-col justify-between border-r border-white/10">
-                    <div class="space-y-16">
-                        <div>
-                            <h4 class="text-gold-accent font-black uppercase text-xs tracking-widest mb-8">Location</h4>
-                            <p class="text-3xl font-serif italic text-white leading-tight">1431 W Rosamond Blvd,
-                                Rosamond,<br>CA 93560</p>
-                        </div>
-                        <div>
-                            <h4 class="text-gold-accent font-black uppercase text-xs tracking-widest mb-8">Service Hours
-                            </h4>
-                            <ul class="space-y-4 text-white/70 font-bold uppercase text-xs tracking-widest">
-                                <li class="flex justify-between border-b border-white/5 pb-4"><span>Mon - Thu</span>
-                                    <span class="text-white">11:00 — 22:00</span>
-                                </li>
-                                <li class="flex justify-between border-b border-white/5 pb-4"><span>Fri - Sat</span>
-                                    <span class="text-primary font-black">11:00 — 23:00</span>
-                                </li>
-                                <li class="flex justify-between"><span>Sunday</span> <span class="text-white">12:00 —
-                                        22:00</span></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-gold-accent font-black uppercase text-xs tracking-widest mb-8">Contact</h4>
-                            <p class="text-4xl font-[900] text-white tracking-tighter">(661) 256-4602</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:col-span-7 h-[600px] relative">
-                    <iframe allowfullscreen=""
-                        class="absolute inset-0 w-full h-full border-0 grayscale invert opacity-50 hover:opacity-100 transition-opacity duration-1000"
-                        loading="lazy"
-                        src="https://maps.google.com/maps?q=1431+W+Rosamond+Blvd,+Rosamond,+CA+93560&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
+
+
     <footer class="bg-black text-white pt-32 pb-16 border-t border-white/5 mt-auto">
         <div class="max-w-[1440px] mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-20">
             <div class="md:col-span-2 space-y-10">
                 <div class="flex items-center gap-4">
                     <span class="material-symbols-outlined text-primary text-5xl">restaurant_menu</span>
-                    <h1 class="text-4xl font-[900] tracking-tighter uppercase">Ramon's</h1>
+                    <h1 class="text-4xl font-[900] tracking-tighter uppercase">Eppies</h1>
                 </div>
-                <p class="text-xl text-white/40 font-serif italic max-w-md">"Not just dinner, but a piece of Mexican
-
+                <p class="text-xl text-white/40 font-serif italic max-w-md">"Not just dinner, but a piece of American
                     history served on a plate."</p>
                 <div class="flex gap-6">
                     <a class="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all duration-300"
@@ -539,7 +409,6 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
-
 </body>
 
 </html>

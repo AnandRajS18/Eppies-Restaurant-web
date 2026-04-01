@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-3d-gold {
+        @apply relative overflow-hidden bg-gold-gradient text-navy-accent font-black uppercase tracking-widest px-8 py-4 rounded-full shadow-[0_10px_20px_-5px_rgba(212,175,55,0.4)] transition-all duration-300 hover:shadow-[0_15px_30px_-5px_rgba(212,175,55,0.6)] hover:-translate-y-1 active:translate-y-0.5 border-b-4 border-amber-800/30;
+    }
+    .glass-card {
+        @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2.5rem] overflow-hidden transition-all duration-500 hover:shadow-[0_0_40px_-10px_rgba(212,175,55,0.3)] hover:border-gold-accent/30;
+    }
+    .parallax-hero {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .pulse-anim {
+        animation: subtlePulse 2s infinite ease-in-out;
+    }
+    .bleed-image {
+        @apply transition-transform duration-700 group-hover:scale-110 group-hover:-translate-y-4 filter drop-shadow-2xl;
+    }
+}
+@keyframes subtlePulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+    70% { transform: scale(1.02); box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+}
+html { scroll-behavior: smooth; }
+body { 
+    @apply antialiased transition-colors duration-500;
+}
+.floating-text {
+    text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
