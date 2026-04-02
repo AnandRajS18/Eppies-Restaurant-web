@@ -23,3 +23,17 @@ window.toggleTheme = function() {
     const isDark = document.documentElement.classList.toggle('dark');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
 };
+
+window.toggleMobileMenu = function() {
+    const menu = document.getElementById('mobile-menu');
+    const icon = document.getElementById('mobile-menu-icon');
+    if (menu.classList.contains('translate-x-full')) {
+        menu.classList.remove('translate-x-full');
+        menu.classList.add('translate-x-0');
+        icon.textContent = 'close';
+    } else {
+        menu.classList.add('translate-x-full');
+        menu.classList.remove('translate-x-0');
+        icon.textContent = 'menu';
+    }
+};
