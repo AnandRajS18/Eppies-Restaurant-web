@@ -2,6 +2,11 @@
 <html class="dark" lang="en">
 
 <head>
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Eppies | Our Story</title>
@@ -101,8 +106,7 @@
                     href="find-us.html">Find Us</a>
             </nav>
             <div class="flex items-center gap-8">
-                <button class="p-2 rounded-full hover:bg-white/10 transition-colors"
-                    onclick="document.documentElement.classList.toggle('dark')">
+                <button class="p-2 rounded-full hover:bg-white/10 transition-colors" onclick="window.toggleTheme()">
                     <span class="material-symbols-outlined dark:hidden">dark_mode</span>
                     <span class="material-symbols-outlined hidden dark:block">light_mode</span>
                 </button>
@@ -122,23 +126,28 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
             <div class="glass-card overflow-hidden h-[500px]">
-                <img src="assets/images/ramons_about.webp" alt="Restaurant Interior" class="w-full h-full object-cover">
+                <img src="assets/images/about_eppies.webp" alt="Restaurant Interior" class="w-full h-full object-cover">
             </div>
             <div class="space-y-8">
                 <h4 class="text-3xl font-serif text-navy-accent dark:text-gold-accent italic">Born in 1984</h4>
                 <p class="text-lg text-slate-600 dark:text-white/70 leading-relaxed">
-                    Long before Ramon's openned it's doors in 1984, restaurant owner Roberto Lopez recalls his days as a
-                    young boy helping his father Ramon, a waiter, who was struggling to make ends meet in the restaurant
-                    industry. After decades of hard work and dedication, the Lopez Family officially opened Ramon's
-                    Mexican Restaurant on Sierra Highway.
+                    LLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum libero, sagittis nec rhoncus
+                    et, lacinia ac lacus. Proin at sem laoreet, hendrerit augue in, commodo dolor. Duis non lacus magna.
+                    Ut dictum libero vel nisi porta dignissim. In vehicula libero at tortor malesuada, eu porttitor ex
+                    iaculis. Fusce a commodo ante, eget ornare ipsum. Ut mattis sollicitudin elit, vel ullamcorper ex
+                    bibendum finibus. Sed non interdum ligula.
                 </p>
                 <p class="text-lg text-slate-600 dark:text-white/70 leading-relaxed">
-                    Today, dining at Ramon's is one of Rosamond's oldest and fondest traditions.
+                    In hendrerit ex vitae malesuada egestas. Nullam in commodo dui. Nam accumsan leo eu mauris vehicula,
+                    in consectetur erat feugiat. Donec tempor commodo tellus, viverra finibus mi commodo sed.
                 </p>
                 <p class="text-lg text-slate-600 dark:text-white/70 leading-relaxed">
-                    Now located on Rosamond Blvd, Ramon's is Rosamond's longest standing Mexican Restaurant. It's
-                    authentic Mexican food, margaritas, and family vibes are considered a beloved staple amongst the
-                    community.
+                    Phasellus placerat arcu nunc. Curabitur a pulvinar tellus, vitae venenatis tellus. In hac habitasse
+                    platea dictumst. Sed at aliquam odio. Suspendisse justo dolor, pellentesque non volutpat id,
+                    vehicula sit amet sapien. Nunc mollis pellentesque elementum. Nam hendrerit vel enim in imperdiet.
+                    Cras vehicula sagittis felis, non dapibus elit gravida ut. Mauris tempor nibh turpis, non blandit
+                    nibh ullamcorper eu. Donec tincidunt ac ligula vitae blandit. Fusce id ullamcorper augue, ut
+                    eleifend urna.
                 </p>
                 <a href="menu.html"
                     class="inline-block border-b-2 border-primary text-primary font-black uppercase tracking-widest pb-1 hover:text-white hover:border-white transition-all transform hover:translate-x-2">Explore
@@ -152,9 +161,9 @@
             <div class="md:col-span-2 space-y-10">
                 <div class="flex items-center gap-4">
                     <span class="material-symbols-outlined text-primary text-5xl">restaurant_menu</span>
-                    <h1 class="text-4xl font-[900] tracking-tighter uppercase">Ramons's</h1>
+                    <h1 class="text-4xl font-[900] tracking-tighter uppercase">Eppies</h1>
                 </div>
-                <p class="text-xl text-white/40 font-serif italic max-w-md">"Not just dinner, but a piece of Mexican
+                <p class="text-xl text-white/40 font-serif italic max-w-md">"Not just dinner, but a piece of American
                     history served on a plate."</p>
                 <div class="flex gap-6">
                     <a class="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all duration-300"
@@ -190,7 +199,7 @@
         </div>
         <div
             class="max-w-[1440px] mx-auto px-8 mt-32 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] font-black uppercase tracking-[0.3em] text-white/20">
-            <p>© 2026 Ramons's Restaurant Group.</p>
+            <p>© 2026 Eppies Restaurant Group.</p>
             <div class="flex gap-12">
                 <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
                 <a class="hover:text-white transition-colors" href="#">Terms &amp; Service</a>
